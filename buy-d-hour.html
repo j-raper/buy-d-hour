@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy-D-Hour - We come to you, By the hour</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body class="bg-light">
+
+    <!-- navbar starts here -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-lg mt-2 mb-2">
+            <a class="navbar-brand text-info fw-bold fs-4" href="#"><i class="fas fa-shipping-fast"></i>Buy-D-Hour</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active fs-5" aria-current="page" href="#home"> Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="#about"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="#services"> Services </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="#contact"> Contact </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="webapp/login.html"> Log-in </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="webapp/register.html"> Register </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+    <!-- navbar ends here -->
+
+    <!--home section starts here-->
+
+    <section class="home py-1" id="home">
+        <div class="container-lg">
+            <div class="row min-vh-100 align-items-center align-content-center">
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <div class="home-img text-center">
+                        <img src="img/deliver.png" class="mw-100" alt="profile img">
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+                    <div class="home-text">
+                        <p class="text-muted mb-1">Hello, this is</p>
+                        <h1 class="text-info text-uppercase fs-1 fw-bold">Buy-D-Hour</h1>
+                        <h2 class="fs-4">Delivery Services</h2>
+                        <p class="mt-4 text-muted">"We come to you, By the hour"</p>
+                        <a href="#contact" class="btn btn-outline-info px-3 mt-3">Be Our Client</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--home section ends here-->
+
+    <!--about sections starts here-->
+
+    <section class="about p-5" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold fs-1 mb-5">About Us</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="about-text text-center">
+                        <h3 class="fs-3 mb-3">Buy-D-Hour</h3>
+                        <p class="fs-5 text-muted">Buy-D-Hour offers a simple and secure delivery for your needs; may it be food, goods, hardware products, cleaning products, and anything that you might need. Buy-D-Hour cares for the welfare for its customers and as well as its workers by providing you with an option of a contactless delivery; As a means of following the protocols for COVID-19. If you want something, and you want it quick, worry not for we come to you, By-the-hour.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about sections ends here-->
+
+    <!--contact and map-->
+
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col col-md">
+                    <h2 class="text-center mb-4">Company Details</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Location:</span> Calinan, Davao City 
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Phone Number:</span> 234-5798 
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact and map-->
+
+    <!-- service section start -->
+<section class="services py-5" id="services">
+    <div class="container-lg py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center">
+                    <h2 class="fw-bold mb-5">Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-item shadow-sm py-4 rounded bg-white">
+                    <div class="icon my-3 text-info fs-2 fa-3x" id="food">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h2 class="fs-5 py-2">Food Delivery</h2>
+                    <p class="text-muted">Guaranteed to receive hot and yummy 				  food</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-item shadow-sm py-4 rounded bg-white">
+                    <div class="icon my-3 text-info fs-2" id="mart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h2 class="fs-5 py-2">Mart</h2>
+                    <p class="text-muted">Get all your needs - grocery and 				more</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-item shadow-sm py-4 rounded bg-white">
+                    <div class="icon my-3 text-info fs-2" id="money">
+                        <i class="fas fa-money-bill-alt"></i>
+                    </div>
+                    <h2 class="fs-5 py-2">Affordable Pricing</h2>
+                    <p class="text-muted">Offers friendly and affordable fixed-				price</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>
+<!-- service section end -->
+
+
+    <!--contact section starts here-->
+
+    <section class="contact py-5" id="contact">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="section-title text-center">
+                    <h2 class = "fw-bold mb-5"> Be Our Client </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-5">
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-info">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Email</h3>
+                            <p class="text-muted">example@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-info">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Phone</h3>
+                            <p class="text-muted">234-5798</p>
+                        </div>
+                    </div>
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Visit Office</h3>
+                            <p class="text-muted">Calinan, Davao City</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                      <div class="contact-form">
+                          <form>
+                              <div class="row">
+                                  <div class="col-lg-6 mb-4">
+                                    <input type="text" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                  </div>
+                                  <div class="col-lg-6 mb-4">
+                                    <input type="text" placeholder="Contact Number" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-lg-12 mb-4">
+                                    <input type="text" placeholder="Address" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                  <textarea rows="5" placeholder="Your Message" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="submit" class="btn btn-info px-3">Send Message</button>
+                                </div>
+                            </div>
+                          </form>
+                      </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <!--contact section starts here-->
+
+    <!--footer section starts here-->
+
+    <footer class="footer border-top py-4">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="m-0 text-center text-muted">&copy; 2021 Buy-D-Hour | All rights reserved! </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--footer section ends here-->
+    
+
+    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaXRzeXdpbnp5c3BpZGVyIiwiYSI6ImNrdWxkbnl1MjFmOXIybm96dzNoODc3NjYifQ.KaNSGqg5QHJmjUptqKE0rw';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [125.4553, 7.1907],
+    zoom: 18,
+    });
+</script>   
+</body>
+</html>
